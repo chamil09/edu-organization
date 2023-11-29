@@ -1,13 +1,44 @@
-import { getWixClient } from '@app/hooks/useWixClientServer';
+// import { getWixClient } from '@app/hooks/useWixClientServer';
 import { WixMediaImage } from '@app/components/Image/WixMediaImage';
 import testIds from '@app/utils/test-ids';
 export default async function Projects() {
-  const wixClient = await getWixClient();
-  const { items } = await wixClient.items
-    .queryDataItems({
-      dataCollectionId: 'Our-Projects',
-    })
-    .find();
+  // const wixClient = await getWixClient();
+  // const { items } = await wixClient.items
+    // .queryDataItems({
+    //   dataCollectionId: 'Our-Projects',
+    // })
+    // .find();
+
+    const items = [
+      {
+        _id: 1,
+        data: {
+          cover: 'https://via.placeholder.com/600x320',
+          title: 'Project 1',
+          short_description: 'A short description of Project 1',
+          slug: 'project-1',
+        },
+      },
+      {
+        _id: 2,
+        data: {
+          cover: 'https://via.placeholder.com/600x320',
+          title: 'Project 2',
+          short_description: 'A short description of Project 2',
+          slug: 'project-2',
+        },
+      },
+      {
+        _id: 3,
+        data: {
+          cover: 'https://via.placeholder.com/600x320',
+          title: 'Project 3',
+          short_description: 'A short description of Project 3',
+          slug: 'project-3',
+        },
+      },
+      // Add more items as needed
+    ];
 
   return (
     <div className="relative">

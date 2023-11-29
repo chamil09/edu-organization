@@ -3,12 +3,47 @@ import { formatDate } from '@app/utils/date-formatter';
 import { WixMediaImage } from '@app/components/Image/WixMediaImage';
 import testIds from '@app/utils/test-ids';
 export default async function News() {
-  const wixClient = await getWixClient();
-  const { items } = await wixClient.items
-    .queryDataItems({
-      dataCollectionId: 'News',
-    })
-    .find();
+  // const wixClient = await getWixClient();
+  // const { items } = await wixClient.items
+  //   .queryDataItems({
+  //     dataCollectionId: 'News',
+  //   })
+  //   .find();
+
+  const items = [
+    {
+      _id: 1,
+      data: {
+        image: 'https://via.placeholder.com/600x320', // Placeholder image link
+        title: 'News Article 1',
+        short_description: 'A short description of News Article 1',
+        date: '2023-11-29', // Assuming a date in ISO format
+        slug: 'news-article-1',
+      },
+    },
+    {
+      _id: 2,
+      data: {
+        image: 'https://via.placeholder.com/600x320', // Placeholder image link
+        title: 'News Article 2',
+        short_description: 'A short description of News Article 2',
+        date: '2023-11-28', // Assuming a date in ISO format
+        slug: 'news-article-2',
+      },
+    },
+    {
+      _id: 3,
+      data: {
+        image: 'https://via.placeholder.com/600x320', // Placeholder image link
+        title: 'News Article 3',
+        short_description: 'A short description of News Article 3',
+        date: '2023-11-28', // Assuming a date in ISO format
+        slug: 'news-article-3',
+      },
+    },
+    // Add more items as needed
+  ];
+  
 
   return (
     <div className="relative">
@@ -49,11 +84,11 @@ export default async function News() {
                   objectFit="cover"
                   disableZoom={true}
                 />
-                <span className="bg-blue-site text-white px-6 py-2 absolute bottom-[-20px]">
+                {/* <span className="bg-blue-site text-white px-6 py-2 absolute bottom-[-20px]">
                   {formatDate(
                     new Date(item.data!.date?.$date ?? item.data!.date)
                   )}
-                </span>
+                </span> */}
               </div>
               <div className="bg-white relative mt-10 px-8 pb-10">
                 <h2 className="mb-10 font-site">{item.data!.title}</h2>

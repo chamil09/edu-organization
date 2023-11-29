@@ -2,17 +2,86 @@ import { getWixClient } from '@app/hooks/useWixClientServer';
 import { WixMediaImage } from '@app/components/Image/WixMediaImage';
 import testIds from '@app/utils/test-ids';
 export default async function Team() {
-  const wixClient = await getWixClient();
-  const { items: team } = await wixClient.items
-    .queryDataItems({
-      dataCollectionId: 'Our-Team',
-    })
-    .find();
-  const { items: volunteers } = await wixClient.items
-    .queryDataItems({
-      dataCollectionId: 'Volunteers',
-    })
-    .find();
+  // const wixClient = await getWixClient();
+  // const { items: team } = await wixClient.items
+  //   .queryDataItems({
+  //     dataCollectionId: 'Our-Team',
+  //   })
+  //   .find();
+  // const { items: volunteers } = await wixClient.items
+  //   .queryDataItems({
+  //     dataCollectionId: 'Volunteers',
+  //   })
+  //   .find();
+
+  const team = [
+    {
+      _id: 1,
+      data: {
+        image: 'https://via.placeholder.com/300x220', // Placeholder image link
+        name: 'Team Member 1',
+        about: 'A brief description of Team Member 1',
+        email: 'team.member1@example.com',
+      },
+    },
+    {
+      _id: 2,
+      data: {
+        image: 'https://via.placeholder.com/300x220', // Placeholder image link
+        name: 'Team Member 2',
+        about: 'A brief description of Team Member 2',
+        email: 'team.member2@example.com',
+      },
+    },
+    {
+      _id: 3,
+      data: {
+        image: 'https://via.placeholder.com/300x220', // Placeholder image link
+        name: 'Team Member 3',
+        about: 'A brief description of Team Member 3',
+        email: 'team.member3@example.com',
+      },
+    },
+    // Add more team members as needed
+  ];
+
+  const volunteers = [
+    {
+      _id: 1,
+      data: {
+        name: 'Volunteer 1',
+        about: 'A brief description of Volunteer 1',
+        email: 'volunteer1@example.com',
+      },
+    },
+    {
+      _id: 2,
+      data: {
+        name: 'Volunteer 2',
+        about: 'A brief description of Volunteer 2',
+        email: 'volunteer2@example.com',
+      },
+    },
+    {
+      _id: 3,
+      data: {
+        name: 'Volunteer 3',
+        about: 'A brief description of Volunteer 3',
+        email: 'volunteer3@example.com',
+      },
+    },
+    {
+      _id: 4,
+      data: {
+        name: 'Volunteer 4',
+        about: 'A brief description of Volunteer 4',
+        email: 'volunteer4@example.com',
+      },
+    },
+    // Add more volunteers as needed
+  ];
+  
+  
   return (
     <div className="relative" data-testid={testIds.TEAM_PAGE.CONTAINER}>
       <div className="w-full h-[400px] relative">
