@@ -80,8 +80,7 @@ export default async function Team() {
     },
     // Add more volunteers as needed
   ];
-  
-  
+
   return (
     <div className="relative" data-testid={testIds.TEAM_PAGE.CONTAINER}>
       <div className="w-full h-[400px] relative">

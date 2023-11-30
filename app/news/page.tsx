@@ -43,7 +43,6 @@ export default async function News() {
     },
     // Add more items as needed
   ];
-  
 
   return (
     <div className="relative">

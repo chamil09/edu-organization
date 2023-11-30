@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <body>
@@ -6,11 +5,13 @@
       (async () => {
         navigator.serviceWorker.register('sw.bundle.js');
         if (!navigator.serviceWorker.controller)
-          await new Promise(f => navigator.serviceWorker.oncontrollerchange = f);
+          await new Promise(
+            (f) => (navigator.serviceWorker.oncontrollerchange = f)
+          );
         const traceUrl = new URL(location.href).searchParams.get('trace');
         const params = new URLSearchParams();
         params.set('trace', traceUrl);
-        await fetch('context?' + params.toString()).then(r => r.json());
+        await fetch('context?' + params.toString()).then((r) => r.json());
         await location.reload();
       })();
     </script>

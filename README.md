@@ -15,25 +15,25 @@ Prerequisites:
 Set up environment variables to consume Wix Headless APIs:
 
 1. In the template's root folder, create a file for the local environment variables:
-    ```sh
-    cp .env.template .env.local.
-    ```
+   ```sh
+   cp .env.template .env.local.
+   ```
 2. In the new **.env.local** file, paste the OAuth app client ID after `NEXT_PUBLIC_WIX_CLIENT_ID=`.
 
 Run the development server:
 
 1. Run either:
 
-    ```sh
-    yarn dev
-    ```
+   ```sh
+   yarn dev
+   ```
 
-    or
+   or
 
-    ```sh
-    npm i
-    npm run dev
-    ```
+   ```sh
+   npm i
+   npm run dev
+   ```
 
 2. Open http://localhost:3000 in your browser to see the template home page.
 
@@ -52,7 +52,7 @@ The repository requires a single environment variable: `NEXT_PUBLIC_WIX_CLIENT_I
 
 To learn how to customize the template and add more functionality using Wix APIs, see the [Wix JavaScript SDK reference](https://dev.wix.com/api/sdk).
 
-This template is written in [Next.js](https://nextjs.org/docs) 13 using the [Next.js App Router](https://nextjs.org/docs/app). 
+This template is written in [Next.js](https://nextjs.org/docs) 13 using the [Next.js App Router](https://nextjs.org/docs/app).
 
 To learn more about Next.js, see:
 

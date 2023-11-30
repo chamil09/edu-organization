@@ -1,4 +1,3 @@
-
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://manage.wix.com/headless-funnel-nextjs/netlify?repository=https://github.com/wix/wix-cms-nextjs-template) &emsp; [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone/hidden?integration-ids=oac_LZ0wUqGylqzgr8bE8a1R7JTE&skippable-integrations=1&build-command=yarn+build&deploymentIds=dpl_9Gtegfcme9RUmTXFvVGrP8BwDGUV&s=https%3A%2F%2Fgithub.com%2Fwix%2Fwix-cms-nextjs-template&demo-image=https%3A%2F%2Fgithub.com%2Fwix%2Fwix-cms-nextjs-template%2Fraw%2Fmain%2Fdocs%2Fmedia%2Ftemplate-showcase.gif&external-id=%7B%22repo%22%3A%22https%3A%2F%2Fgithub.com%2Fwix%2Fwix-cms-nextjs-template%22%2C%22referralInfo%22%3A%22repo-readme_education%22%7D&demo-title=Education+Starter&demo-description=Education+starter+template+with+Wix%E2%80%99s+Content+Management+solution.&demo-url=https%3A%2F%2Fvercel.cms-demo.wix.dev&repository-name=wix-cms-nextjs-template&referralInfo=repo-readme_education)
 
 # A Wix Data Next.js Education Template
@@ -31,8 +30,8 @@ For information on creating and managing collections, see [Getting Started with 
 
 There are 2 ways to authorize the template to access your Wix project:
 
-+ [Option A: Quick start deployment](#option-a-quick-start-deployment).
-+ [Option B: Create an OAuth client ID in the Wix dashboard](#option-b-create-an-oauth-client-id-in-the-wix-dashboard).
+- [Option A: Quick start deployment](#option-a-quick-start-deployment).
+- [Option B: Create an OAuth client ID in the Wix dashboard](#option-b-create-an-oauth-client-id-in-the-wix-dashboard).
 
 #### Option A: Quick start deployment
 
@@ -43,25 +42,26 @@ Authentication credentials are automatically incorporated into the template, mak
 ---
 
 ##### Netlify
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/3dc4d147-be85-4063-bf14-01cc80da8125/deploy-status)](https://app.netlify.com/sites/wix-cms-nextjs-template/deploys)
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://manage.wix.com/headless-funnel-nextjs/netlify?repository=https://github.com/wix/wix-cms-nextjs-template)
 
-
 For more information, see [How to Deploy Next.js Sites to Netlify](https://www.netlify.com/blog/2020/11/30/how-to-deploy-next.js-sites-to-netlify/).
 
-You can also view our [live demo site](https://netlify.cms-demo.wix.dev/). 
+You can also view our [live demo site](https://netlify.cms-demo.wix.dev/).
 
 ---
 
 ##### Vercel
+
 ![Vercel](https://vercelbadge.vercel.app/api/wix/wix-cms-nextjs-template?style=flat-square)
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone/hidden?integration-ids=oac_LZ0wUqGylqzgr8bE8a1R7JTE&skippable-integrations=1&build-command=yarn+build&deploymentIds=dpl_9Gtegfcme9RUmTXFvVGrP8BwDGUV&s=https%3A%2F%2Fgithub.com%2Fwix%2Fwix-cms-nextjs-template&demo-image=https%3A%2F%2Fgithub.com%2Fwix%2Fwix-cms-nextjs-template%2Fraw%2Fmain%2Fdocs%2Fmedia%2Ftemplate-showcase.gif&external-id=%7B%22repo%22%3A%22https%3A%2F%2Fgithub.com%2Fwix%2Fwix-cms-nextjs-template%22%2C%22referralInfo%22%3A%22repo-readme_education%22%7D&demo-title=Education+Starter&demo-description=Education+starter+template+with+Wix%E2%80%99s+Content+Management+solution.&demo-url=https%3A%2F%2Fvercel.cms-demo.wix.dev&repository-name=wix-cms-nextjs-template&referralInfo=repo-readme_education)
 
 For more information, see [How to Deploy Next.js Sites to Vercel](https://vercel.com/docs/frameworks/nextjs).
 
-You can also view our [live demo site](https://vercel.cms-demo.wix.dev/). 
+You can also view our [live demo site](https://vercel.cms-demo.wix.dev/).
 
 ---
 
@@ -114,17 +114,18 @@ To learn how to customize the template and add more functionality using Wix APIs
 
 This template is written in [Next.js](https://nextjs.org/docs) 13 using [Next.js app directory](https://beta.nextjs.org/docs/app-directory-roadmap). To learn more about `Next.js`, see the following resources:
 
-+ [Next.js documentation](https://nextjs.org/docs): Learn about Next.js features and APIs.
-+ [Learn Next.js](https://nextjs.org/learn): An interactive Next.js tutorial.
-+ [Next.js app directory](https://beta.nextjs.org/docs/app-directory-roadmap): Information on the Next.js App Router Roadmap.
+- [Next.js documentation](https://nextjs.org/docs): Learn about Next.js features and APIs.
+- [Learn Next.js](https://nextjs.org/learn): An interactive Next.js tutorial.
+- [Next.js app directory](https://beta.nextjs.org/docs/app-directory-roadmap): Information on the Next.js App Router Roadmap.
 
 Additionally, this template uses the following libraries and features:
-+ [React Server Components](https://nextjs.org/docs/advanced-features/react-18/server-components)
-+ [TypeScript](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-4-9.html)
-+ [TanStack Query <sup>v4</sup>](https://tanstack.com/query/latest)
-+ [Tailwind CSS](https://tailwindcss.com/)
-+ [Flowbite](https://flowbite.com/)
-+ [Wix client SDK](https://dev.wix.com/api/sdk/introduction)
+
+- [React Server Components](https://nextjs.org/docs/advanced-features/react-18/server-components)
+- [TypeScript](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-4-9.html)
+- [TanStack Query <sup>v4</sup>](https://tanstack.com/query/latest)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Flowbite](https://flowbite.com/)
+- [Wix client SDK](https://dev.wix.com/api/sdk/introduction)
 
 ## Part IV: Deployment
 
@@ -145,6 +146,7 @@ Feel free to delete the one you are not using.<br>
 **Note**: there is a `# TODO: change to your site name` in both `YAML` files, please change the site name to the actual site name in the relevant deployment platform
 
 ### Screenshot Testing
+
 This repo includes the screenshots to validate the initial site provided by this repo. Obviously, changing it to your needs would break these tests.<br>
 To update the screenshots simply delete the failing ones under [location](../tests/e2e/__screenshots__), create a pull request and let the PR build fail, then head to `Netlify E2E / netlify-e2e`/`Vercel E2E / vercel-e2e` status checks, and under `Summary`, the screenshots generated by Playwright are available to download and update in the folder [location](../tests/e2e/__screenshots__)
 

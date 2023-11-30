@@ -25,14 +25,13 @@ export default function RootLayout({
         <link rel="icon" href="https://www.wix.com/favicon.ico" />
       </head>
       <body className="text-blue-site bg-white">
-
-          <>
-            <Header />
-            <main className="bg-white min-h-[600px]">{children}</main>
-            <div className="mt-10 sm:mt-20">
-              <Footer />
-            </div>
-          </>
+        <>
+          <Header />
+          <main className="bg-white min-h-[600px]">{children}</main>
+          <div className="mt-10 sm:mt-20">
+            <Footer />
+          </div>
+        </>
       </body>
     </html>
   );
