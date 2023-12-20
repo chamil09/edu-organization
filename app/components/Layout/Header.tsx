@@ -13,7 +13,7 @@ const Header = () => (
         <h2 className="flex-1">
           <a
             href="/"
-            className="flex flex-col sm:flex-row items-center gap-2 sm:gap-6"q
+            className="flex flex-col sm:flex-row items-center gap-2 sm:gap-6"
           >
             <Logo/>
             <div>
